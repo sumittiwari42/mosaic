@@ -1,0 +1,191 @@
+.loginBody {
+	padding:30px 0 60px;
+
+  .loginMain { 
+  	margin:60px 0 0; 
+  	display: inline-block;
+  	position: relative;
+  	width: 100%;
+  }
+
+	.loginHead {
+		a { 
+			@include det(#737373,24px,400);
+			border-bottom: 1px solid #a0a0a0;
+			padding:15px 0;margin: 0;
+			width: 50%;
+			text-align: center;
+			float: left;
+			position: relative; 
+			text-decoration: none;
+			font-family: 'Playfair Display', serif;
+
+			&:hover { color:$pro-color; }
+			&.activeBorder { 
+				color: $pro-color;
+				&:after { 
+					content:'';
+					position: absolute; 
+					width: 100%;
+					left: 0;
+					bottom: 0;
+					height:2px;
+					background: $pro-color;
+				}
+			}
+		}
+	}
+
+	.loginForm{
+		width: 400px;
+		
+		.formField:first-child{margin-top: 0;}
+		.formField:last-child{margin-bottom: 0;}
+	}
+	.social-btn{width: 100% !important;}
+
+	.btn-social {
+		color: #fff;
+		padding-left: 0 !important;
+		line-height: 50px !important; 
+		padding: 0 !important;
+
+		span {
+			border: 0;
+			line-height: 50px;
+			position: inherit; 
+			font-size: 16px;
+		}
+	}
+	.btn-facebook { 
+		background: #fff; 
+		color: #3b5998; 
+		border-color: #000 !important; 
+		border-radius: 0 !important;
+		transition: all 0.3s ease-in-out;
+		-webkit-transition: all 0.3s ease-in-out;
+
+		&:hover {
+			background: #3b5998;
+			color:#fff;
+			border-color: #3b5998 !important;
+		}
+	}
+
+	.btn-google { 
+		background: #fff;
+		color: #f14438; 
+		border-color: #000 !important; 
+		border-radius: 0 !important;
+		transition: all 0.3s ease-in-out;
+		-webkit-transition: all 0.3s ease-in-out;
+
+		&:hover { 
+			background: #f14438;
+			color: #fff;border-color:#f14438 !important;
+		}
+	}
+	.btn-social>:first-child {top: 2px; width: auto;margin-right: 5px;}
+
+	.formSubmit
+	.primary{width: 100%;
+		button{ width: 100% !important; border-radius: 0; height: 50px; line-height: 50px; padding: 0;margin-right: 0;
+			text-transform: uppercase;
+		}
+	}
+
+
+
+
+
+}
+.loginLeft{float: left;position: relative; }
+
+.loginOr{ position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); height: 100%; background: #acacac; width: 1px;
+	p{height: 40px;width: 40px;line-height: 40px;text-align: center;background: #fff;@include det(#000,16px,900);position: absolute;top: 50%;left: 50%;transform:translate(-50%,-50%);margin: 0;}
+}
+.formField{width: 100%;margin: 15px 0;display: inline-block;width: 100%;
+	input{@include det(#000,14px,400);height: 50px;line-height: 50px;padding: 0 10px;border: 1px solid #000;width: 100%;outline: none;
+		&:focus{border-color: $pro-color;}
+		&::-webkit-input-placeholder { color: #000; }
+		&::-moz-placeholder {color: #000; }
+		&:-ms-input-placeholder { color: #000; }
+		&:-moz-placeholder { color: #000; }
+	}
+	.fPassword{@include det($pro-color,14px,400);margin-top:8px;display: inline-block;}
+	&.formSubmit input{background: $pro-color;border: 0;color: #fff;text-transform: uppercase;font-size: 16px;opacity: 0.8;@include anim();
+		&:hover{opacity: 1}
+	}
+} 
+.loginRight{float: right;width: auto !important;
+	p{@include det(#000,14px,400);}
+	.block-content{text-align: left !important;}
+}
+.otherLogin a{@include det(#000,14px,400);display: inline-block;width: 100%;height: 50px;line-height: 50px;border: 1px solid #000;text-align: center;margin:15px 0;
+	&:first-child{margin-top: 0;}
+	&.fbLogin:hover{background: #385c8e;color: #fff;border-color: #385c8e;}
+	&.gLogin:hover{background: #f14438;color: #fff;border-color: #f14438;}
+}
+
+@media (max-width: 1600px){ 
+	.container1 {width: 1170px; }
+} 
+@media all and (max-width: 1200px) { 
+	.container1 {width: 955px; }     
+	.loginBody .loginForm {width: 300px; }
+	.formField input, .otherLogin a {height: 40px; line-height: 40px; }
+	.formField,  .otherLogin a  {margin: 10px 0;}
+	.formField .fPassword {font-size: 12px; margin-top: 5px;}
+	.formField.formSubmit input{font-size: 14px;}
+	.loginBody .btn-social, .loginBody .btn-social span {line-height: 40px !important;}
+	.loginBody .loginMain {margin: 40px 0;}
+	.loginBody .formSubmit .primary button {height: 40px; line-height: 40px;}
+	// .loginBody {padding: 20px 0 0px; }
+
+
+}
+@media all and (max-width: 990px) {  
+	.container1 {width: 750px; } 
+	.loginBody {padding: 45px 0 10px; }
+}
+
+@media all and (max-width: 768px) {  
+	.container1 {width: 100%; }  
+	.loginBody .loginHead a {font-size: 20px; }
+	.loginBody .loginForm {width: 260px; }
+	.loginBody .loginMain {margin: 20px 0;}
+	.loginBody .loginHead a {padding: 10px 0;}
+}
+
+@media all and (max-width: 640px) {
+
+	.loginBody .loginForm {width: 230px; }
+} 
+@media all and (max-width: 550px) { 
+
+	.loginLeft, .loginRight, .loginBody .social-btn .btn-social{width: 100% !important;}
+	.loginBody .loginForm {width: 100%; display: inline-block; }
+	.formField{width: calc(50% - 20px);float: left;margin: 10px 10px;}
+	.loginBody .loginForm .formField:first-child {margin-top: 10px; }  
+	.loginForm form{margin:  0 -15px;}
+	.formField.formSubmit{width: calc(100% - 20px);}
+
+	.loginOr {position: relative; display: inline-block; width: 100%; margin: 40px 0 30px;height: 1px; }
+	.otherLogin {margin:0 -10px;
+		a{width: calc(50% - 20px);float: left;margin: 0;margin: 0 10px;}
+	}
+	.loginBody .loginHead a {font-size: 18px; }
+/*.loginOr p {height: 50px; width: 60px; line-height: 45px;font-size: 24px}*/
+
+
+}
+@media all and (max-width: 430px) {    
+	.formField {width: 100%; float: left; margin: 5px 0px; }
+	.loginForm form {margin: 0; }
+	.formField.formSubmit {width: 100%; }
+	.loginOr {margin: 25px 0;}
+	.otherLogin a {width: calc(50% - 10px);margin: 0 5px; }
+
+}
+
+.customer-account-login .page-title, .customer-account-create .page-title{display: none !important;}

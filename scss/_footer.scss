@@ -1,0 +1,209 @@
+.container-fluid {padding: 0 !important;}
+footer {
+	.footer-top {
+		    background: url(../images/black-footer-strip.jpg);
+		     background-size: 100%;
+		span {
+			display: inline-block;
+			color: #fff;
+			font-size: 14px;
+			text-transform: uppercase;
+			padding: 0 12px;
+			margin: 4px 0;
+		}
+		span:first-child {border-right: 1px solid #fff;}
+	}
+	a:visited, .alink:visited {color: #fff;}
+	.content-about {
+		width: 94%;
+		margin: 0 auto;
+		padding: 30px 0;
+		text-align: center;
+		border-bottom: 1px dotted $pro-color;
+		.icon {
+			margin: 20px 0;
+			text-align: center;
+			i {
+				font-size: 75px;
+				color: $pro-color;
+			}
+		}
+		p {
+			margin: 20px 0;
+		}
+	}
+	.nav-content {
+		width: 94%;
+		margin: 0 auto;
+		padding: 0px 0 20px;
+
+		@media screen and (max-width: 767px) {
+			text-align: center;
+		}
+		.head {
+			margin: 25px 0 18px;
+			text-transform: uppercase;
+			position: relative;
+			a {
+				font-size: 16px;
+				color: gray;
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+		.head:after {
+			content: ' ';
+			width: 30px;
+			height: 2px;
+			position: absolute;
+			bottom: -8px;
+			left: 0px;
+			background: $color;
+			@media screen and (max-width: 767px) {
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+			@media screen and (max-width: 480px) {
+			 left: 43%;
+       transform: translate(0, -45%);
+     }
+		}
+		ul {
+			li {
+				list-style: none;
+				a {
+				color: grey;
+				list-style: none;
+				text-transform: capitalize;
+				margin: 10px 0;
+				&:hover {
+					text-decoration: none;
+				}
+			}
+			}
+		}
+	}
+	.copyright {
+		background: $pro-color;
+		@media screen and (max-width: 767px) {
+			text-align: center !important;
+		}
+		p{
+			margin: 0;
+			padding: 12px;
+			color: #fff;
+			text-transform: capitalize;
+
+			@media screen and (max-width: 767px) {
+				margin: 20px 0;
+			}
+		}
+		.first {
+			float: left;
+			@media screen and (max-width: 767px) {
+				text-align: center;
+			}
+		}
+		.last {
+			float: right;
+			@media screen and (max-width: 767px) {
+				text-align: center;
+			}
+		}
+	}
+	.flower-bottm {
+		@media screen and (max-width: 767px) {
+			display: none;
+		}
+	}
+	.control {
+		input,
+		.subscribe {
+			height: 41px;
+		}
+	}
+	form.subscribe {
+		@media screen and (max-width: 767px) {margin-top: 30px;}
+	}
+}
+
+
+    
+footer .action.subscribe {height: 41px !important;}
+
+@media screen and (max-width: 480px) {
+	div#newsletter-error{
+	font-size: 1rem;
+
+	}
+			
+			.message.success{
+					font-size: 1rem;
+			}
+			span.price-label{
+				display: none;
+			}
+     }
+
+.content-about .icon img {width: 60px;}    
+
+.footer.content {
+	.links {
+		width: 100%;
+		.block-static-block {
+			width: 95%;
+			width: 0 auto;
+		 ul {
+		 	padding-right: 0;
+
+		 	.actions {
+		 		width: 24%;
+		 		position: relative;
+        left: -5px;
+		 	}
+		 }	
+		}
+	}
+}
+
+body .column.main {
+	padding-top: 0px !important;
+}
+
+@media screen and (max-width: 768px) {
+	body.catalog-product-view .copyright {
+	    margin-bottom: 0;
+	}
+}
+
+.footer-top span a {
+	color: #fff !important;
+
+	&:hover {color: $color !important;}
+}
+
+.form.send.confirmation {
+    margin: 0 auto;
+    padding: 40px 0;
+
+    @media screen and (max-width: 768px) {width: 80%;}
+
+    .label span {
+	    font-weight: 500;
+	    font-size: 16px;
+	    color: #000;    	
+    }
+}
+
+.customer-account-confirmation .send.primary {
+	width: 220px;
+	padding: 12px 20px;
+	text-transform: uppercase;
+	color: $color;
+	font-weight: 500;
+
+	&:hover {color: #fff;}
+}
+
+body .page-title {display: block !important;}

@@ -1,0 +1,119 @@
+.track-wrapper {
+	width: 92%;
+	margin: 30px auto;
+	text-align: center;
+	p {
+		font-size: 18px;
+		font-family: 'Playfair Display', serif;
+	}
+
+	.track-form {
+		width: 75%;
+		margin: 30px auto;
+		overflow: auto;
+
+		.input {
+			height: 42px;
+			width: 75%;
+			float: left;
+			color: #000;
+			border: 1px solid #000;
+			padding: 0 15px;
+		}
+
+		.btn {
+			height: 42px;
+			width: 25%;
+			float: left;
+			border-radius: 0;
+			background: #416619;
+			border: 1px solid #416619;
+			color: #fff;
+			font-size: 18px;
+			text-transform: uppercase;
+			transition: all 0.8s;
+			-webkit-transition: all 0.8s;
+
+			&:hover {
+				background: #fff;
+				color: #416619;
+				transition: all 0.8s;
+				-webkit-transition: all 0.8s;
+			}
+		}
+	}
+}
+
+.catalogsearch-result-index .pageset,
+.catalog-product-view .pageset{
+	padding-top: 155px !important;
+}
+ 
+@media screen and (max-width: 767px) {
+ .catalogsearch-result-index .pageset {
+ 	padding-top: 90px !important;
+ }
+
+ .catalogsearch-result-index .pageset,
+.catalog-product-view .pageset{
+	padding-top: 100px !important;
+}
+}
+
+.checkout-index-index .pageset{
+	padding-top: 135px;
+}
+
+.customer-account-login .pageset{
+	padding-top: 65px;
+
+	@media screen and (max-width: 767px) {padding-top: 75px;}
+}
+
+.catalog-product-view .pageset .page-title {display: block !important;}
+
+body .form-grp {
+	.field {
+		float: left;
+		width: 80%;
+
+		@media screen and (max-width: 768px) {
+			width: 100%;
+			float: none
+		}
+
+		.label {display: none;}
+	}
+
+	.actions-toolbar {
+		float: left;
+		width: 20%;
+
+		@media screen and (max-width: 768px) {
+			width: 100%;
+			float: none;
+			overflow: auto;
+			text-align: center;
+		}
+
+		.action.submit {
+			background-color: $color !important;
+			font-weight: 500;
+
+			&:hover {background-color: #fff !important;}
+
+			&:after {display: none;}
+			width: 100%;
+
+			@media screen and (max-width: 768px) {
+				float: none;
+				margin-top: 20px;
+				width: 200px;
+			}
+		}
+	}
+
+	.control input {
+		height: 42px;
+	}
+}

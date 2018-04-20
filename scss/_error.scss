@@ -1,0 +1,207 @@
+.cms-thank-you,
+.cms-no-route {
+.container {
+	width:100%;
+}
+.container-error {
+	width: 60%;
+	margin: 0 auto;
+}
+.container-error-wrapper {
+	width: 100%;
+}
+.content-error {
+    padding-top: 50px;
+    padding-bottom: 50px; 
+}
+.error {
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+}
+.error h2 {
+	display: inline-block;
+	position: relative;
+	font-family: 'Playfair Display', serif;
+	color: #416619;
+	margin: 0;
+	font-size: 100px;
+	line-height: 70px;
+	text-transform: uppercase;
+	letter-spacing: 20px;
+	font-weight: 400;
+}
+.errorContent {
+	width: 60%;
+	margin: 0 auto;
+}
+.errorContent p {
+	padding: 50px 0px;
+}
+.featherImg {
+	background-image: url("../images/Feather75x75.png");
+	width: 90px;
+	height: 90px;
+	position: absolute;
+	left: 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	animation-name: drive;
+	animation-duration: 3s;
+	transition: 500ms;
+	animation-fill-mode: forwards;
+}
+@keyframes drive {
+	0% {
+		left: 0;
+		bottom: -30px;
+		transform:rotate(50deg);
+	}
+	100% {
+		left: 100%; 
+		bottom:  0;
+	}
+}
+.thankyou-data h2 {
+	font-size: 80px;
+	line-height: 60px;
+	letter-spacing: 5px;
+}
+.error a {
+	border: 1px solid #416619;
+	text-align: center;
+	margin: 0 auto;
+	color: #416619;
+	line-height: 50px;
+	text-transform: uppercase;
+	display: inline-block;
+	padding: 0px 15px;
+	text-decoration: none;
+	transition: 500ms;
+}
+.error a:hover {
+	background: #416619;
+	color: #fff;
+	text-decoration: underline;
+}
+.bottom-errorImage {
+	position: absolute;
+	top: 300px;
+	right: 30px;
+	width: 220px;
+	height: 168px;	
+}
+.bottom-knobImage {
+	width: 100%;
+}
+@media only screen and (max-width: 1200px) {
+	.bottom-errorImage {
+		display: none;	
+	}
+}
+@media only screen and (max-width: 938px) {
+	.thankyou-data .featherImg {
+		width: 80px;
+		height: 80px;
+	}
+	.errorContent {
+		width: 80%;
+	}
+}
+@media only screen and (max-width: 908px) {
+	.thankyou-data .featherImg {
+		width: 70px;
+		height: 70px;
+	}
+	.thankyou-data h2 {
+		font-size: 70px;
+		line-height: 50px;
+	}
+}
+@media only screen and (max-width: 810px) {
+	.thankyou-data h2 {
+		font-size: 65px;
+		line-height: 40px;
+	}
+}
+@media only screen and (max-width: 760px) {
+	.thankyou-data h2 {
+		font-size: 60px;
+	}
+}
+@media only screen and (max-width: 632px) {
+	.thankyou-data .featherImg {
+		width: 60px;
+		height: 60px;
+	}
+	.thankyou-data h2 {
+		font-size: 50px;
+	}
+}
+@media only screen and (max-width: 582px) {
+	.thankyou-data .featherImg {
+		width: 50px;
+		height: 50px;
+	}
+	.thankyou-data h2{
+		font-size: 36px;
+		line-height: 30px;
+	}
+	.errorContent {
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 414px) {
+	.container-error {
+		width: 100%;
+	}
+	.error h2 {
+		font-size: 80px;
+		letter-spacing: 15px;
+		line-height: 60px;
+	}
+	.error .featherImg {
+		width: 70px;
+		height: 70px;
+	}
+	.thankyou-data .featherImg {
+		width: 40px;
+		height: 40px;
+	}
+	.thankyou-data h2 {
+		font-size: 36px;
+		line-height: 28px;
+		letter-spacing: 3px;
+	}
+	.errorContent p {
+		padding: 25px 0px;
+	}
+}
+@media only screen and (max-width: 240px) {
+	.container-error {
+		width: 100%;
+	}
+	.error h2 {
+		font-size: 60px;
+		letter-spacing: 10px;
+		line-height: 50px;
+	}
+	.error .featherImg {
+		width: 60px;
+		height: 60px;
+	}
+	.thankyou-data .featherImg {
+		width: 40px;
+		height: 40px;
+	}
+	.thankyou-data h2 {
+		font-size: 26px;
+		line-height: 20px;
+		letter-spacing: 2px;
+	}
+	.error a {
+		padding: 0px 5px;
+	}
+}
+}

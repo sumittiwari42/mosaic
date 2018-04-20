@@ -1,0 +1,133 @@
+.contact-index-index {
+	.legend {
+		color: #416619;
+		text-transform: uppercase;
+		font-size: 30px;
+		font-family: 'Playfair Display', serif;
+	}
+
+	.cms-content-important {margin: 0;}
+
+	.column:not(.sidebar-main) .form.contact, .column:not(.sidebar-additional) .form.contact {
+		width: 100%;
+		margin: 0 auto;
+		float: none;
+		background: url(../images/grey-background-mosaic.jpg);
+		padding: 30px 0;
+		background-size: 100% 100%; 
+	}
+
+	.column:not(.sidebar-main) .form.contact fieldset,  .column:not(.sidebar-additional) .form.contact fieldset {
+		width: 90%;
+		margin: 0 auto;
+		float: none;
+	}
+
+	.contact {
+		width: 100%;
+		float: none;
+		text-align: center;
+
+		.field {
+			float: left;
+			width: 33.33%;
+			padding: 0 15px;
+
+			@media screen and (max-width: 767px) {
+				width: 100%;
+				float: none;
+				padding: 0;
+			}
+		}
+		.field.comment {
+			width: 100%;
+			float: none;
+		}
+
+		.actions-toolbar {
+			text-align: center;
+			margin-top: 20px;
+
+			.submit {
+				border-radius: 0;
+        padding: 10px 30px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-family: 'Playfair Display', serif;
+        transition: all 0.6s;
+        -webkit-transition: all 0.6s;
+
+        @media screen and (max-width: 767px) {width: 90%;}
+
+        &:hover {
+        	background: #fff;
+        	color: #416619;
+        	transition: all 0.6s;
+        	-webkit-transition: all 0.6s;
+        }
+			}
+
+			.primary {
+				float: none;
+				margin: 0;
+			}
+		}
+	}
+
+	.cms-content-important {background: transparent;}
+
+  .top-contact-content {
+		width: 95%;
+		margin: 0 auto;
+		overflow: auto;
+    
+    .top-contact-part {
+			width: 33.333%;
+			float: left;
+			text-align: center;
+
+			@media screen and (max-width: 767px) {
+				width: 100%;
+			}
+
+			.logo-con i {
+				font-size: 36px;
+				margin-top: 20px;
+				margin-bottom: 20px;
+				color: #416619;
+			}
+
+		}
+  }	
+  .content {
+		a {
+			/*display: block;*/
+			color: #000;
+
+				&:hover {
+					text-decoration: none;
+					color: #416619;
+				}
+			}
+		}  
+}
+
+	#contact-form .no-label,
+	#contact-form .label {display: none !important;}
+
+	.mage-error {
+		text-align: left;
+		@media screen and (max-width: 768px) {
+			font-size: 13px !important;
+		}
+	}
+
+.contact-index-index .contact .actions-toolbar .primary {
+	color: $color;
+
+	&:hover {
+		color: #fff;
+	}
+}
+
+.block.newsletter .action.subscribe {background: $color !important;}

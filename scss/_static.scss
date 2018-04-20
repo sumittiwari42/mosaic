@@ -1,0 +1,219 @@
+.faq-index-index {
+
+	.faq-content {
+		width: 95%;
+		margin: 0 auto;
+		float: none;
+	}
+
+	.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+		background: transparent;
+		border: 0px solid #c5c5c5;
+		border-bottom: 1px solid #c5c5c5;
+		font-weight: 500;
+  }
+
+  .faq-content .ui-accordion-header:hover {
+  	background: transparent;
+  	color: #416619;
+  	font-weight: 500;
+  }
+
+  .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+  	color: #416619;
+  	border-bottom: 0px solid;
+  	font-weight: 500;
+  }
+
+  .faq-accordion .ui-widget-content {
+    border: 0px solid #dddddd;
+    background: #ffffff;
+    color: #333333;
+    border-bottom: 1px solid #dddddd;
+    font-weight: 500;
+  }
+
+  .ui-accordion .ui-accordion-content {
+    padding: 8px 24px 10px;
+    font-weight: 500;
+    font-size: 18px;
+    font-family: 'Playfair Display', serif;
+}
+
+  .ui-accordion .ui-accordion-header {
+  	font-size: 22px;
+  	font-weight: 500;
+  	font-family: 'Playfair Display', serif;
+
+  	@media screen and (max-width: 767px) {font-size: 20px;}
+  }
+
+  .ui-accordion .ui-accordion-header {
+    padding: 10px .5em 30px 1em;
+
+    @media screen and (max-width: 767px) {padding: 20px .5em 22px 1em;}
+  }
+
+  .column:not(.sidebar-main) .form.contact .fieldset, .column:not(.sidebar-additional) .form.contact .fieldset {
+  	width: 70%;
+  	float: left;
+  	margin-bottom: 25px;
+  	margin-left: 2.5%;
+
+  	@media screen and (max-width: 767px) {
+  		width: 95%;
+  	}
+  }
+
+  .column:not(.sidebar-main) .form.contact, .column:not(.sidebar-additional) .form.contact {
+  	width: auto;
+  	float: none;
+  	clear: both;
+    background: url(../images/faqs-bg.jpg);
+    background-position: 70%;
+    padding: 30px 0;
+  }
+
+  .label {display: none !important;}
+
+  .name,
+  .email {
+  	width: 48%;
+  	float: left;
+  	@media screen and (max-width: 767px) {
+  		margin-left: 0;
+  		width: 100%;
+  	}
+  }
+
+  .name {margin-right: 4%;}
+
+  .actions-toolbar {
+  	float: none;
+  	width: 90%;
+  	clear: both;
+  	margin-left: 2.5%;
+
+  	@media screen and (max-width: 767px) {
+  		width: 95%;
+  		margin: 0 auto;
+  	}
+
+  	.submit {
+	  	border-radius: 0;
+	    padding: 10px 50px;
+	    text-transform: uppercase;
+	    letter-spacing: 1px;
+	    font-family: 'Playfair Display', serif;
+          transition: all 0.6s;
+          -webkit-transition: all 0.6s;      
+
+        &:hover {
+          background: #fff;
+          color: #416619;
+          transition: all 0.6s;
+          -webkit-transition: all 0.6s;
+        }
+  	}
+  }
+
+  .no-label {
+  	color: #fff;
+    /*text-transform: capitalize;*/
+    font-size: 34px;
+    font-family: 'Playfair Display', serif;
+  }
+
+  .control input, .control textarea {
+  	background: transparent;
+  	border: 1px solid #fff;
+  }
+
+  .control #newsletter {
+  border: 1px solid #000;
+  color: #000;
+  }
+
+//   ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+//   color: #fff !important;
+//   }
+// 	::-moz-placeholder { /* Firefox 19+ */
+// 	  color: #fff !important;
+// 	}
+// 	:-ms-input-placeholder { /* IE 10+ */
+// 	  color: #fff !important;
+// 	}
+// 	:-moz-placeholder { /* Firefox 18- */
+// 	  color: #fff !important;
+// 	}
+}
+
+
+.content-wrapp-single {
+  width: 90%;
+  margin: 0 auto 20px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+  padding-bottom: 20px;
+
+  &:last-child {
+    border-bottom: 0px solid;
+  }
+	h4 {
+    padding-bottom: 15px;
+    font-size: 28px;
+    font-weight: 500;
+    font-family: 'Playfair Display', serif;
+    color: #416619;
+	}
+
+	p {
+		font-size: 18px;
+    font-weight: 500;
+    font-family: 'Playfair Display', serif;
+    line-height: 22px;
+
+    @media screen and (max-width: 767px) {
+      font-size: 16px;
+      line-height: 26px;
+    }
+	}
+}
+
+//whaolseller styling//
+.s2.faq-index-index {
+  .action.primary {
+    padding: 10px 0 !important;
+    width: 200px;
+  }
+}
+
+body.s2 .page-footer {
+  margin-top: 0px;
+}
+
+.view-s2:first-child span a {border-right: 1px solid;}
+
+@media screen and (max-width: 768px) and (min-width: 767px) {
+  .s2 .nav-toggle {
+    position: relative;
+    display: inline-block;
+    top: 5px;
+  }
+}
+
+.faq-index-index .actions-toolbar .submit {
+  color: $color;
+  &:hover {color: #fff;}
+}
+
+body.faq-index-index .ui-accordion .ui-accordion-content {
+  font-size: 16px;
+}
+
+.faq-index-index .footer .control input {
+  border: 1px solid $color;
+}
+
+body.faq-index-index .control input, body.faq-index-index .control textarea {
+ color: #575757;
+}
