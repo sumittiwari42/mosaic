@@ -424,3 +424,34 @@
 
 
 }
+
+//quate account
+
+.quotation-quote-history .page-main.pagemain,
+ .quotation-quote-view .page-main.pagemain {
+	width: 92%;
+	margin: 30px auto;
+
+	.order-date {
+		margin: 15px 0 !important;
+	}
+
+	.cart.table-wrapper .col.price {padding: 10px 11px 10px;}
+
+	@media screen and (max-width: 768px) {
+		margin: 0px auto;
+		padding-top: 100px;
+
+	.cart.table-wrapper .item .col.qty,.cart.table-wrapper .item .col.sku {text-align: left;}
+	.item span {padding: 8px 0;}
+
+	.col.price:before {
+		margin-top: 11px;
+		margin-right: 0;
+	}
+
+	.cart.table-wrapper .product-image-wrapper .product-image-photo {margin: 0;}
+	}
+
+	.order-status {margin: 10px 0;}
+}

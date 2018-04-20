@@ -134,18 +134,18 @@
   color: #000;
   }
 
-//   ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-//   color: #fff !important;
-//   }
-// 	::-moz-placeholder { /* Firefox 19+ */
-// 	  color: #fff !important;
-// 	}
-// 	:-ms-input-placeholder { /* IE 10+ */
-// 	  color: #fff !important;
-// 	}
-// 	:-moz-placeholder { /* Firefox 18- */
-// 	  color: #fff !important;
-// 	}
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #fff !important;
+  }
+	::-moz-placeholder { /* Firefox 19+ */
+	  color: #fff !important;
+	}
+	:-ms-input-placeholder { /* IE 10+ */
+	  color: #fff !important;
+	}
+	:-moz-placeholder { /* Firefox 18- */
+	  color: #fff !important;
+	}
 }
 
 
@@ -215,5 +215,12 @@ body.faq-index-index .ui-accordion .ui-accordion-content {
 }
 
 body.faq-index-index .control input, body.faq-index-index .control textarea {
- color: #575757;
+ color: #fff;
 }
+
+.s2.faq-index-index footer .action.primary {width: 100%;}
+
+body .ui-state-active, body .ui-widget-content .ui-state-active, body .ui-widget-header .ui-state-active {
+  border: 0px solid;
+  background: transparent;
+} 

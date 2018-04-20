@@ -431,7 +431,8 @@ body .backhomebutton,
 .customer-address-index .page-main.pagemain .actions-toolbar .primary button,
 .newsletter-manage-index .page-main.pagemain .actions-toolbar .primary button,
 .checkout-success .primary.continue,
-#checkout .checkout-payment-method .actions-toolbar .primary  {
+#checkout .checkout-payment-method .actions-toolbar .primary,
+body.s2 .cart-empty .main.actions .action.continue {
   color: $color !important;
   text-transform: uppercase;
 
@@ -512,4 +513,17 @@ body .mfp-iframe-scaler iframe .page-wrapper .page-main{padding-top: 0px;}
  :-moz-placeholder { /* Firefox 18- */
    color: #575757 !important;
  }
+}
+body.s2.quotation-quote-index .pageset {padding: 0;}
+
+body.customer-account-login .pageset {
+    padding-top: 10px;
+}
+
+.s2.quotation-quote-index .cart-empty .main.actions .action.continue  {margin: 20px 0;}
+
+body.account .message.info {
+  padding-left: 50px;
+  margin: 40px auto;
+  width: 90%;
 }
